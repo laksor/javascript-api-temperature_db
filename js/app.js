@@ -16,9 +16,9 @@ const displayTemp = temp => {
         div.innerHTML = `
             <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
             <h1>${temp.name}</h1>
-            <h3><span>${temp.main.temp}</span>&deg;C</h3>
+            <h3><span>${temp.main.temp}</span>&deg;F</h3>
             <h2>country: ${temp.sys.country} </h2>
-            <h1 class="lead">${temp.weather[0].main}</h1>
+            <h1 class="lead">condition : ${temp.weather[0].main}</h1>
         `;
         divT.appendChild(div);
     
