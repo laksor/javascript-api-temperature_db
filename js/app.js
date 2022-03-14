@@ -28,5 +28,12 @@ const setInnerText = (id, tempp) => {
 }
 
 const displayTempp = tempp => {
+    setInnerText('city', tempp.name);
+    setInnerText('temperature', tempp.main.temp);
+    setInnerText('condition', tempp.weather[0].main);
+    setInnerText('temperature', tempp.temp);
+    setInnerText('temperature', tempp.temp);
+    setInnerText('temperature', tempp.temp);
+    setInnerText('temperature', tempp.temp);
     setInnerText('temperature', tempp.temp);
 }
