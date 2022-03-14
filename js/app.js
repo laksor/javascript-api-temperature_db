@@ -18,6 +18,9 @@ const displayTemp = temp => {
         div.classList.add('text-dark');
         div.classList.add('shadow-lg');
         div.classList.add('rounded');
+        div.classList.add('fw-bold');
+        div.classList.add('text-center');
+        div.classList.add('text-capitalize');
         div.innerHTML = `
             <img src="https://openweathermap.org/img/wn/${temp.weather[0].icon}@2x.png" alt="">
             <h1>${temp.name}</h1>
