@@ -8,18 +8,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
         body {
             background: url(images/bg-image.jpg) no-repeat;
             background-size: cover;
             height: 100vh;
+            font-family: 'Syne Mono', monospace !important;
         }
     </style>
 </head>
 <body>
     <div class="container py-5">
-        <form class="col-md-6 m-auto py-5">
+        <form class="col-md-6 m-auto py-5 ">
+            <h1 class="text-light fw-bold mb-3 text-center shadow-lg">Weather Update</h1>
             <div class="input-group mb-5">
-                <input id="search-input" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <input id="search-input" type="text" class="form-control" placeholder="Enter a City Name for Weather ...">
                 <div class="input-group-append">
                     <button onclick="searchTemp()" type="button" class="btn btn-danger">Search</button>
                 </div>
